@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <meta name="description" content="Maak hier uw afspraak met tandartspraktijk Kieskeurig">
+        <meta name="author" content="Verone de Vries">
+        <title>Tandartsafspraak bij Tandartspraktijk Kieskeurig</title>
+    </head>
+
+    <body>
+        <header>
+            <h1><strong>Tandartsafspraak bij Tandartspraktijk Kieskeurig</strong></h1>
+            <p><em>Ons team heeft persoonlijke aandacht voor uw tanden</em></p>
+
+            <a href="#afspraak">Naar de afsprakenplanner</a>
+        </header>
+
+        <main>
+            <article>
+                <section>
+                    <h3><b>Wat u kunt verwachten.</b></h3>
+                    <p>Tandartspraktijk Kieskeurig is een betrouwbare en deskundige tandarts. 
+                    Bij Tandartspraktijk Kieskeurig staat de gezondheid en de schoonheid van uw gebit centraal. 
+                    Tandartspraktijk Kieskeurig combineert moderne tandheelkunde met persoonlijke aandacht. 
+                    Wij nemen de tijd om naar uw wensen en eventuele zorgen te luisteren. U voelt zich bij elk bezoek aan Tandartspraktijk Kieskeurig volledig op uw gemak. Daar zorgen wij voor!</p>
+                    <p>
+                    Tandartspraktijk Kieskeurig biedt complete mondzorg: Van periodieke controles en mondhygiëne 
+                    tot esthetische behandelingen en implantaten. 
+                    Tandartspraktijk Kieskeurig werkt met de modernste technieken. 
+                    Wij werken met de nieuwste apparatuur voor een nauwkeurige en comfortabele behandeling.
+                    Het team van Tandartspraktijk Kieskeurig is gespecialiseerd in het rustig en pijnvrij begeleiden van patiënten.</p>
+                </section>
+
+                <form id="afspraak" action="bewaarInvoer.php" method="POST">
+                    <fieldset>
+                        <legend><b>Tandartsafspraak<b></b></legend>
+
+                        <table width="100%" border="3"
+                        bordercolor="black" bgColor="gray">
+                        <caption>Vul hier uw gegevens en datum in</caption>
+
+                        <thead>
+                            <tr>
+                                <th>Nr</th>
+                                <th>Groep</th>
+                                <th colspan="2">Verplichte elementen</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr> <!--Persoonlijke gegevens-->
+                                <td rowspan="9" valign="top">1</td>
+                                <td rowspan="9" valign="top"><em>Persoonlijke gegevens</em></td>
+                                <td><label for="achternaam">Achternaam:</label></td>
+                                <td><input type="text" id="achternaam" name="achternaam_invoer" placeholder="de Vries" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="voorletters">Voorletters:</label></td>
+                                <td><input type="text" id="voorletters" name="voorletters_invoer" placeholder="AA" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="adres">Adres:</label></td>
+                                <td><input type="text" id="adres" name="adres_invoer" placeholder="Boerhaavelaan" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="huisnummer">Huisnummer:</label></td>
+                                <td><input type="number" id="huisnummer" name="huisnummer_invoer" placeholder="11" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="woonplaats">Woonplaats:</label></td>
+                                <td><input type="text" id="woonplaats" name="woonplaats_invoer" placeholder="Amsterdam" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="telefoonnummer">Telefoonnummer:</label></td>
+                                <td><input type="tel" id="telefoonnummer" name="telefoonnummer_invoer" placeholder="0612345678" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="emailadres">E-mailadres:</label></td>
+                                <td><input type="email" id="emailadres" name="email_invoer" placeholder="aadevries@email.nl"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="geboortedatum">Geboortedatum:</label></td>
+                                <td><input type="date" id="geboortedatum" name="geboortedatum_invoer" required></td>
+                            </tr>
+                            <tr>
+                                <td>Geslacht</td>
+                                <td><input type="radio" id="geslacht_man" name="geslacht" required>
+                                    <label for="geslacht_man">Man</label>
+                                    <input type="radio" id="geslacht_vrouw" name="geslacht">
+                                    <label for="geslacht_vrouw">Vrouw</label>
+                                    <input type="radio" id="geslacht_anders" name="geslacht">
+                                    <label for="geslacht_anders">Anders</label>
+                            </tr>
+                            <tr><!--Beschrijving van de klachten-->
+                                <td rowspan="8" valign="top">2</td>
+                                <td rowspan="8" valign="top"><em>Beschrijving van de klachten</em></td>
+                                <td><label for="achternaam">Achternaam:</label></td>
+                                <td><input type="text" id="achternaam" name="achternaam_invoer" placeholder="de Vries" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="voorletters">Voorletters:</label></td>
+                                <td><input type="text" id="voorletters" name="voorletters_invoer" placeholder="AA" required></td>
+                            </tr>
+        
+        
+        
+        
+                        </tbody>
+                        </table>
+                    </fieldset>
+                </form>
+            </article>
+        </main>
+    </body>
+</html>
+                    
+                    
