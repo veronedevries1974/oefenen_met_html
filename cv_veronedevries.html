@@ -1,0 +1,412 @@
+<!DOCTYPE html><!--html-versie-->
+<html lang="nl"><!--paginalanguage-->
+    <head>
+<!--meta browser / SEO-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--mobiele apparaten-->
+        <meta name="description" content="Curriculum vitae van Verone de Vries">
+        <meta name="author" content="Verone de Vries">
+        <meta name="robots" content="index, follow"> <!--noindex/nofollow=onzichtbare inhoud en links voor robots SEO-->
+        <link rel="canonical" href="https://veronedevries.nl"><!--officiele URL/hoofdversie pagina-->
+        <title>Curriculum vitae Verone de Vries</title>
+
+<!--Google Fonts-lettertypes laadt website sneller-->
+        <link rel="preconnect" href="https://gstatic.com">
+        <link href="https://googleapis.com" rel="stylesheet">
+
+<!--Open Graph / Social Media-->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://veronedevries.nl">
+        <meta property="og:title" content="Curriculum vitae van Verone de Vries">
+        <meta property="og:description" content="Curriculum vitae van Verone de Vries">
+        <meta property="og:image" content="Curriculum vitae verone de vries">
+
+<!--SCSS / JavaScript koppelen-->
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--href:pad naar CSS-bestand, meerdere links mogelijk-->
+        <script src="js/main.js" defer></script>
+        <!--src:pad naar JS-bestand-->
+
+<!--CSS in HTML-->
+        <style type="text/css">
+/*Universele selector voor basisinstellingen gehele pagina*/
+                body {
+                    font-family: 'Montserrat', sans-serif;/*Google Font*/
+                    background-color: rgb(253, 249, 214);
+                    color: #191970; 
+                    margin: 0;/*geen ruimte element/padding/border-marge*/
+                    padding: 0, 20px;
+                }
+
+/*meerdere ID-selectors mag mits unieke naam en één per element*/
+/*Profielfoto*/
+                #profielfoto {
+                    text-align: center;/*midden uitgelijnd*/ 
+                    padding: 20px 0;/*ruimte element-border 20 boven/onder 0 links/rechts*/
+                }
+                #profielfoto img {
+                    display: inline-block;/*blok op regel*/ 
+                    position: relative;/*mogelijkheid tot verplaatsen*/
+                    width: 325px;/*breedte*/
+                    height: 200px;/*hoogte*/
+                    border-radius: 0%;/*w100xh100xbr50% = ronde vorm */
+                    border: 3px solid #191970; /*randdikte, ononderbroken, #hexadecimaal 191970 midnightblue*/
+                    box-shadow: 0 2px 5px rgba(0,0,0,1.00); 
+                }
+                #profielfoto figcaption h1 {
+                    text-align: center;/*midden uitgelijnd*/
+                    white-space: nowrap;/*blijft op zelfde regel*/
+                    background-color: transparent;/*geen eigen achtergrondkleur*/ 
+                    color: rgb(253, 249, 214);/*#hexadecimaal 191970 midnichtblue*/
+                    margin-top: 10px;/*10 boven ruimte element/padding/border-marge foto en tekst*/
+                }
+                
+/*Titel en Navigatiebalk en Pagina-hyperlinks*/
+                #titel h1 {
+                    color: rgb(253, 249, 214); /*licht warm paarse kleur voor de naam*/
+                    font-variant: small-caps;
+                    font-size: 4rem;/*basisgrootte=1rem=16px*/
+                }
+                #titel {
+                    text-align: center;/*midden uitgelijnd*/
+                    color: rgb(253, 249, 214);/*#hexadecimaal,ffffff wit*/
+                    background-color: #7b2cbf;/*#hexadecimaal 191970 midnightblue*/
+                    padding: 10px 10px;/*ruimte element-border 30boven/onder 20 links/rechts*/
+                    margin: 0;/*geen ruimte element/padding/border-marge*/
+                }
+                #navigatie {
+                    color: rgb(253, 249, 214);/*#hexadecimaal ffffff wit*/
+                    background-color: #191970;/*#hexadecimaal 191970 midnightblue*/
+                    padding: 5px;/*ruimte element-border 12 alle kanten*/
+                    text-align: left;
+                }
+                #navigatie p {
+                    margin-bottom: 5px;
+                }
+                #navigatie ul {
+                    margin-top: 0;
+                    padding-top: 0;
+                    list-style-type:circle;  
+                    padding-left: 10;       
+                }
+            
+/*PaginaHyperlinks*/
+                a:link {
+                    color: rgb(253, 249, 214);
+                    text-decoration: none;
+                    transition: color 0.2s ease;
+                }
+                a:visited {/*bezochte link*/
+                    color: #7b2cbf;/*#hexadecimaal 6a4c8d lichter paars*/
+                }
+                a:hover {/*muis aanwijzing*/
+                    color: rgb(#191970);/*#hexadecimaal 002244 donkerblauw*/
+                    text-decoration: underline;/*onderstreept*/
+                    font-weight: bold;
+                }
+                a:active {/*actieve link*/
+                    color: #957dfc;/*#hexadecimaal 1a1a1a bijna zwart*/
+                }
+
+/*Hoofdblokken ruimte links*/
+                #persoonlijk, #werkervaring, #opleidingen {
+                    padding-top: 20px;
+                    padding-bottom: 20px;
+                    padding-left: 20px;
+                    padding-right: 20px; /* Optioneel: geeft rechts ook direct 20px ademruimte */
+                    box-sizing: border-box; /* Zorgt ervoor dat de 20px netjes binnen de breedte valt */
+                    border-bottom: 5px solid #e0e0e0; /* Subtiel scheidingslijntje */
+}             
+/*Elementen (Koppen en paragrafen)*/
+                h1, h2 {
+                    color: #191970;/*#hexadecimaal 002244 donkerblauw*/
+                    background-color: transparent;/*geen eigen achtergrondkleur*/
+                    font-weight: 600;/*dikgedrukte letters*/
+                    padding: 20px 20px;/*ruimte element-border 15 boven/onder, 20 links/rechts*/
+                    margin-top: 20px;/*ruimte element/padding/border-marge aan de bovenkant*/  
+                }
+                h2 {
+                    display: inline-block;/*blokje om h2*/
+                    background-color: #f3e8ff;/*achtergrondkleur*/ 
+                    padding: 5px 10px;/*binnenruimte*/        
+                    border-radius: 4px;/*ronde hoeken*/
+                }
+                h3, p {
+                    color: #191970;/*#hexadecimaal 2b2b2b donkergrijs/zwart*/
+                    background-color: transparent;/*geen eigen achtergrondkleur*/   
+                    line-height: 1.6;/*regelafstand*/
+                }
+
+/*Tekstonderdelen (Introductie en Achtergrond)*/
+                #introductie, #achtergrond {
+                    color: #191970;
+                    background-color: #b08dce;/* Blok achtergrond licht warm paars */
+                    border-left: 4px solid #7b2cbf;/* Helderder paarse accentlijn */
+                    padding: 30px 20px;/*ruimte element-border 15 boven/onder, 20 links/rechts*/
+                    margin: 20px 0;/*ruimte element/padding/border-marge 20 boven/onder, 0 links/rechts*/
+                    box-shadow: 0 2px 5px rgba(0,0,0,0.05); 
+                    /*schaduw maakt box los van achtergrond. 
+                    links/rechts: 0=midden
+                    boven/beneden: 2px=beneden
+                    scherp/vervaagd: 5px=vervaagd
+                    RGBzwart 0.05=5% 
+                    Alpha-transparantie*/
+                }
+
+/*CV onderdelen (Persoonlijke gegevens, Opleidingen en Werkervaring)*/
+                .persoonlijke-gegevens{
+                    padding: 20px 20px;/*ruimte element-border 15 boven/onder, 20 links/rechts*/
+                    margin: 8px 0;
+                    line-height: 1.5;/*regelafstand*/
+                    border-bottom: 1px dashed #e0e0e0;/*lijn*/
+                }
+                .werk{
+                    margin-bottom: 20px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px dashed #e0e0e0; /*lijn*/
+                }
+                .werk h3 {
+                    margin: 0 0 5px 0;/*ruimte om h3 element*/
+                    font-size: 1.1em;/*vergroot letter*/
+                }
+                .bedrijf{
+                    margin: 0;
+                    color: #191970; 
+                    font-style: italic;
+                }
+                .opleiding{
+                    margin-bottom: 20px;
+                    padding-bottom: 10px;
+                    border-bottom: 1px dashed #e0e0e0;/*lijn*/
+                }
+                .opleiding h3 {
+                    margin: 0 0 5px 0;
+                    font-size: 1.1em;
+                }
+                .instituut{
+                    margin: 0 0 5px 0;
+                    color: #191970;
+                    font-style: italic;
+                }
+
+/*NHA-lijst*/
+                .cursus-lijst {
+                    margin: 5px 0 0 0;
+                    padding-left: 20px;
+                    color: #191970;
+                }
+                .cursus-lijst li {
+                    margin-bottom: 3px;
+                }
+
+/* Footer*/
+                #footer {
+                    background-color: #2b2b2b;/*achtergrondkleur*/
+                    color: #ffffff;/*tekstkleur*/
+                    padding: 30px 20px;/*ruimte boven/onder links/rechts*/
+                    margin-top: 40px;/*duwt de footer naar beneden voor ruimte tussen footer en cv*/
+                    display: flex;/*flexbox dwingt tot kolommen naast elkaar*/
+                    flex-wrap: wrap;/*bij smal scherm kolommen onder elkaar*/
+                    justify-content: space-between;/*verdeling kolommen over de breedte*/
+                    gap: 20px;/*ruimte tussen kolommen*/
+                }
+                .footer-sectie {/*vier secties voor ATS*/
+                    flex: 1;/*kolommen even breed*/
+                    min-width: 200px;/*kolommen onder elkaar op mobiel*/
+                }   
+                .footer-sectie h3 {
+                    color: #f3e8ff;/*tekstkleur*/
+                    font-size: 1.1em;/*letters 10% groter dan normaal*/
+                    margin-top: 0;
+                    margin-bottom: 10px;
+                }
+                .footer-sectie p {/*paragraaf in kolom*/
+                    color: #ffffff;/*tekstkleur in kolom*/
+                    margin: 5px 0;
+                }
+                .footer-sectie a {
+                    color: #f3e8ff;
+                }
+                .footer-sectie a:hover {
+                    color: #ffffff;
+                    font-weight: bold;
+                }
+        </style>
+    </head>
+
+    <body>
+
+        <header id="top">
+            <div id="profielfoto">
+                <img src="../../assets/img/verone_foto.jpg" alt="profielfoto Verone de Vries" title="foto - fotograaf">
+                <!--Pad naar fotobestand met forward slashes (/)-->
+            </div>
+            <div id="titel">
+                <h1 id="naam-verone"><strong>Verone de Vries</strong></h1> 
+                <!--Eén h1 hoofdtitel per pagina voor SEO hierarchie, andere koppen h2-->
+                <h2><strong>Full-Stack Developer met een brede achtergrond in Personeel & Arbeid</strong></h2>
+                <h3><em>Gespecialiseerd in front-end [Ionic-Angular, HTML/CSS/JS] backends [C#, Python, SQL] smart-tech en hardware [Arduino]</em></h3> 
+            </div> 
+         
+            <div id="navigatie">
+                <nav>
+                    <p><strong>Inhoudsopgave</strong></p>
+                    <ul>
+                        <li><a href="#introductie">Introductie</a></li>
+                        <li><a href="#persoonlijk">Persoonlijke gegevens</a></li>
+                        <li><a href="#opleidingen">Opleidingen</a></li>
+                        <li><a href="#werkervaring">Werkervaring</a></li>
+                        <li><a href="#achtergrond">Achtergrond</a></li>
+                    </ul>
+                </nav>
+            </div> 
+        </header>
+
+        <main>
+<!--Introductie-->
+            <div id="introductie"><!--navigatie-->
+                <h2>Ambitieuze HBO-professional in transitie naar de tech-sector</h2>
+                <h3><em>HBO Personeel en Arbeid & MBO Mobile App Developing</em></h3>
+                <p>Gespecialiseerd in het bouwen van mobiele apps (Ionic-Angular, HTML/CSS/JS) en robuuste backends (C#, Python, SQL). 
+                Combineert mensenkennis met een passie voor smart technology and hardware (Arduino), ideaal voor het ontwikkelen van 
+                innovatieve software die de fysieke en digitale wereld verbindt.</p>
+        
+                <p>Heeft zich na een succesvolle loopbaan binnen Personeel & Arbeid, via omscholing gespecialiseerd in 
+                hybride apps en besturing van slimme apparaten. Brengt een sterke mix van soft skills, projectmatig werken 
+                en hands-on programmeerkennis mee om slimme technologieën naar een hoger niveau te tillen.</p>
+        
+                <p>Focus op het realiseren van complexe IoT-vraagstukken en app-ontwikkeling.</p>
+                <a href="#top"><em>Naar boven</em></a>
+            </div><!--sluiting navigatie-->
+
+<!-- Persoonlijke gegevens -->
+            <div id="persoonlijk"><!--navigatie-->
+                <h2>Persoonlijke gegevens</h2>
+                
+                <div class="persoonlijke-gegevens"><!--CSS .class-->
+                    <p><strong>Naam:</strong> Verone de Vries</p>
+                    <p><strong>Adres:</strong> Huygensstraat 14</p>
+                    <p><strong>Postcode en woonplaats:</strong> 7471 XT Goor</p>
+                    <p><strong>Telefoonnummer:</strong> 06 - 13 06 34 29</p>
+                    <p><strong>E-mailadres:</strong> veronedevries@gmail.com</p>
+                    <p><strong>Geboortedatum en plaats:</strong> 26 december 1974 te Almelo</p>
+                    <p><strong>Rijbewijs:</strong> B</p>
+                </div><!--sluiting class-->
+                <a href="#top"><em>Naar boven</em></a>
+            </div><!--sluiting navigatie-->
+
+<!-- Werkervaring -->
+            <div id="werkervaring"><!--navigatie-->
+                <h2>Werkervaring</h2>
+<!--HEMA-->
+                <article class="werk"><!--CSS .class opmaak blokje-->
+                    <h3><strong>2024 - 2026</strong> | Verkoper</h3>
+                    <p class="bedrijf">HEMA — Winkel</p><!--CSS .class-->
+                </article>
+<!-- ReggelandBewind -->
+                <article class="werk">
+                    <h3><strong>2019 - 2024</strong> | Beschermingsbewindvoerder Schuldenbewinden</h3>
+                    <p class="bedrijf">ReggelandBewind — Eigenaar</p>
+                </article>
+<!-- Viverus -->
+                <article class="werk">
+                    <h3><strong>2012 - 2015</strong> | Adviseur Personeel en Arbeid</h3>
+                    <p class="bedrijf">Viverus — Eigenaar</p>
+                </article>
+<!-- SWB Groep -->
+                <article class="werk">
+                    <h3><strong>2008 - 2015</strong> | Projectleider en Arbeidsconsulent</h3>
+                    <p class="bedrijf">SWB Groep Hengelo — Afdelingen Directie en Fitis</p>
+                </article>
+<!-- Gemeente Hengelo -->
+                <article class="werk">
+                    <h3><strong>2001 - 2008</strong> | Projectmedewerker en Arbeidsconsulent</h3>
+                    <p class="bedrijf"> Gemeente Hengelo — Afdelingen Sociale Zaken en Werk</p>
+                </article>
+<!-- Gemeente Almelo -->
+                <article class="werk">
+                    <h3><strong>2000 - 2001</strong> | Projectmedewerker</h3>
+                    <p class="bedrijf">Gemeente Almelo — Afdeling Onderwijs</p>
+                </article>
+<!-- Arbeidsvoorziening -->
+                <article class="werk">
+                    <h3><strong>1999 - 2000</strong> | Arbeidsconsulent</h3>
+                    <p class="bedrijf">Arbeidsvoorziening — Afdelingen Arbeidsintegratie, Arbeidsbureau, CBB</p>
+                </article>
+                <a href="#top"><em>Naar boven</em></a>
+            </div><!--sluiting navigatie-->
+
+<!-- Opleidingen -->
+            <div id="opleidingen"><!--navigatie-->
+                <h2>Opleidingen</h2>
+<!-- NHA -->
+                <article class="opleiding">
+                    <h3><strong>2026 - heden</strong> | IT Cursussen</h3>
+                    <p class="instituut">NHA</p>
+                        <ul class="cursus-lijst">
+                            <li>Programmeren voor Beginners</li>
+                            <li>Apps programmeren</li>
+                            <li>Webdesign</li>
+                        </ul>
+                </article>
+<!-- Universiteit Utrecht -->
+                <article class="opleiding">
+                    <h3><strong>2007 - 2010</strong> | WO Geschiedenis</h3>
+                    <p class="instituut">Universiteit Utrecht</p>
+                </article>
+<!-- Saxion Deventer -->
+                <article class="opleiding">
+                    <h3><strong>1997 - 2002</strong> | HBO Personeel en Arbeid</h3>
+                    <p class="instituut">AMA - Saxion Deventer</p>
+                </article>
+<!-- Hogeschool Enschede -->
+                <article class="opleiding">
+                    <h3><strong>1996 - 1997</strong> | HBO Maatschappelijk Werk & Dienstverlening</h3>
+                    <p class="instituut">SA - Hogeschool Enschede</p>
+                </article>
+<!-- Twickelcollege -->
+                <article class="opleiding">
+                    <h3><strong>1986 - 1992</strong> | HAVO</h3>
+                    <p class="instituut">Twickelcollege Hengelo</p>
+                </article>
+                <a href="#top"><em>Naar boven</em></a>
+            </div>
+<!--Achtergrond-->
+            <div id="achtergrond">
+                <h2>Achtergrond</h2>
+                <p>Samen met mijn partner en dochter woon ik in de Hof van Twente. Na het behalen van mijn bachelor heb ik 
+                ervaring opgedaan in de ambtelijke, politiek-bestuurlijke omgeving en in het onderwijs. Ik heb als consulent 
+                en projectmedewerker gewerkt met doelgroepen vallend onder diverse wetten en regelingen. Daarnaast ben ik 
+                als zelfstandig loopbaanadviseur en bewindvoerder werkzaam geweest. Als hobby heb ik Mandarijn geleerd en ben 
+                ik begonnen met apps maken. Dat laatste is uitgegroeid tot een serieus loopbaanpad dat ik thuis combineer met 
+                mantelzorgtaken.
+                </p>
+                <a href="#top"><em>Naar boven</em></a>
+            </div>
+        </main>
+
+<!--Footer-->
+        <footer id="footer">
+            <div class="footer-sectie">
+                <h3>Logo</h3>
+                <img src="logo.png" alt="Logo Verone de Vries" title="Logo" width="100">
+            </div>
+        
+            <div class="footer-sectie">
+                <h3>Contactgegevens</h3>
+                <p>Email: <a href="mailto:veronedevries@gmail.com">veronedevries@gmail.com</a></p>
+                <p>Telefoon: <a href="tel:0613063429">06 - 13 06 34 29</a></p>
+            </div>
+        
+            <div class="footer-sectie">
+                <h3>Route</h3>
+                <p>Huygensstraat 14<br>7471 XT Goor</p>
+            </div>
+        
+            <div class="footer-sectie">
+                <h3>Webdesign door</h3>
+                <p>Verone de Vries</p>
+            </div>
+        </footer>
+    </body>
+</html>
