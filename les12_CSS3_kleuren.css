@@ -1,0 +1,105 @@
+/* Verwijdert de standaard marges van de browser */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*Class Banner*/
+.banner-container {
+  width: 100%;
+  overflow: hidden;/*afbeelding binnen pagina*/
+  line-height: 0;/*voorkomt wit randje onder afbeelding*/
+}
+.banner-container img { /*img-element binnen class banner-container*/
+  width: 100%;
+  height: auto;/* Behoudt de juiste verhoudingen van de foto */
+  display: block;/* Verwijdert inline witruimte */
+  object-fit:cover;/*vervormt niet*/
+}
+
+/*Breuklijn*/
+hr {
+    border: none;/*verwijdert standaardlijn*/
+    height: 5px;/*lijndikte*/
+    background-color: #06565b;  
+    margin: 20px 0;/*witruimte boven en onder de lijn*/
+}
+
+/*ID Titel*/
+#titel {
+    font-size: xx-large;
+    font-weight: 600;/*vet*/
+    text-align: center;/*midden*/
+    color: rgb(245, 247, 248);/*tekstkleur*/
+    background-color: rgb(12, 139, 148);/*achtergrondkleur*/
+    padding: 10px 10px;/*Ruimte 10px boven/onder en links/rechts*/
+    margin: 0;/*geen marge*/
+    margin-top: 0px;/*ruimte tussen de banner en titel*/
+}
+           
+/*PaginaHyperlinks*/
+a:link {
+    color: #4a2c6d;/*#hexadecimaal 4a2c6d donker paars*/
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+a:visited {/*bezochte link*/
+    color: #6a4c8d;/*#hexadecimaal 6a4c8d lichter paars*/
+}
+a:hover {/*muis aanwijzing*/
+    color: #002244;/*#hexadecimaal 002244 donkerblauw*/
+    text-decoration: underline;/*onderstreept*/
+}
+a:active {/*actieve link*/
+    color: #1a1a1a;/*#hexadecimaal 1a1a1a bijna zwart*/
+}
+
+/*Elementen (Koppen en paragrafen)*/
+h2 {
+    color: #06565b;
+    background-color: transparent;/*geen achtergrondkleur*/
+    font-weight: 600;/*dikgedrukte letters*/
+    margin-top: 20px;/*ruimte element/padding/border-marge aan de bovenkant*/
+    text-align: center;
+}
+h3 {
+    color: #06565b;
+    font-style:italic;/*schuin*/
+    background-color: transparent;/*geen achtergrondkleur*/   
+    line-height: 1.6;/*regelafstand*/
+    text-align: left;
+}
+#tabel {
+    
+}
+
+
+/*Footer, footersecties en logosectie*/
+#footer {
+    display: flex;/*naast elkaar*/
+    justify-content: space-between;/*gelijkmatig verdeeld*/
+    align-items: center;/*uitlijning in het midden*/
+    border-color: #06565b;/*randkleur*/
+    border-style: double;
+    background-color: rgb(12, 139, 148);/*achtergrondkleur*/
+    width: auto;/*breedte*/
+    height: 100px;/*hoogte*/
+}
+.footer-sectie {
+    flex: 1;/*elk deel even breed*/
+    padding: 10px;/*ruimte om de tekst*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    font-style: italic;
+    font-weight: lighter;
+    color: #06565b;
+}
+.logo-sectie {
+    flex: 1;/*even breed als .footer-sectie*/
+    padding: 10px;
+    height: 50px;/*hoogte achtergrond-cirkel*/
+    background-image: url('src\assets\img\EU-pexels-tim-diercks.jpg');/*logo als achtergrond*/ 
+    background-repeat: no-repeat;
+    background-position: center;/*midden*/
+    background-size: 50px 50px;/*grootte*/
+}
