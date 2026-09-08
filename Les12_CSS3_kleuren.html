@@ -3,22 +3,17 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="CSS3 kleuren in html">
-        <meta name="author" content="Verone de Vries">
+        <meta name="description" content="Landen in de EU">
+        <meta name="author" content="V DeVries">
         <meta name="robots" content="index, follow"> 
         <link rel="canonical" href="https://EU.eu">
-        <title>CSS3 kleuren in html</title>
-
-        <!-- Google Fonts (preconnect en href gecorrigeerd naar werkende URLs) -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://googleapis.com" rel="stylesheet">
+        <title>Landen in de EU</title>
 
         <!-- Open Graph / Social Media -->
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://EU.eu">
-        <meta property="og:title" content="CSS3 kleuren in html">
-        <meta property="og:description" content="CSS3 kleuren in html">
+        <meta property="og:title" content="Landen in de EU">
+        <meta property="og:description" content="Landen in de EU">
         <meta property="og:image" content="https://EU.eu">
 
         <!-- CSS / JavaScript koppelen -->
@@ -28,88 +23,115 @@
 
     <body>
         <header id="top">
+<!--Banner-->
             <div class="banner-container">
                 <img src="../assets/img/EU-pexels-tim-diercks.jpg" alt="EU-vlaggen" title="foto - Tim Diercks pexels.com">
             </div>
-
+<!--Paginatitel-->
             <div id="titel">
                 <h1>Europese Unie</h1>
             </div> 
-
-            <h2>Unity in Diversity, building our shared future</h2>
-<hr>
+<!--Subtitel-->
+            <h2>Unity in Diversity, building our shared future together</h2>
+            <hr>
+<!--Paginahyperlinkgs-->            
             <h3>Inhoudsopgave</h3>
             <nav>
                 <ul>
-                    <li><a href="#titel">Main</a></li>
-                    <li><a href="#footer">Footer</a></li>
+                    <li><a href="#nav_informatie">Informatie over wolken</a></li>
+                    <li><a href="#nav_landen">Landen</a></li>
+                    <li><a href="#nav_footer">Contactgegevens</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <table width="100%" border="0">
-                <thead>
-                    <tr id="Kolomnaam">
-                        <th>Kolomnaam 1</th>
-                        <th>Kolomnaam 2</th>
-                        <th>Kolomnaam 3</th>
-                        <th>Kolomnaam 4</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td id="woord_achtergrondkleur">woord</td>
-                        <td id="woord_achtergrondkleur">woord</td>
-                        <td id="woord_achtergrondkleur">woord</td>
-                        <td id="woord_achtergrondkleur">woord</td>
-                    </tr>
-                    <tr>
-                        <td id="img_achtergrondkleur">img</td>
-                        <td id="img_achtergrondkleur">img</td>
-                        <td id="img_achtergrondkleur">img</td>
-                        <td id="img_achtergrondkleur">img</td>
-                    </tr>
-                    <tr>
-                        <td id="woord_achtergrondkleur">woord</td>
-                        <td id="woord_achtergrondkleur">woord</td>
-                        <td id="woord_achtergrondkleur">woord</td>
-                        <td id="woord_achtergrondkleur">woord</td>
-                    </tr>
-                    <tr>
-                        <td id="img_achtergrondkleur">img</td>
-                        <td id="img_achtergrondkleur">img</td>
-                        <td id="img_achtergrondkleur">img</td>
-                        <td id="img_achtergrondkleur">img</td>
-                    </tr>
-                </tbody>
-            </table>
-         
-            <!-- Hoofdinhoud komt hier -->
+<!--Afbeelding wolken-->
+            <figure>
+                <img id="image" src="../assets/img/wolken-konevi-pexels.jpg" alt="wolken" title="foto - Konevi pexels.com"> 
+                <figcaption>Wolken</figcaption>
+            </figure>
+<!--Tekst wolken-->
+            <section id="nav_informatie">
+                <h3>Wolken</h3>
+                <p class="p1">Maecenas gravida diam a tortor suscipit eleifend vitae quis nibh.</p> 
+                <p>Donec pretium nunc id augue sodales, vitae ullamcorper diam eleifend. 
+                Mauris ut efficitur leo. Sed fermentum laoreet sagittis. 
+                Nulla ipsum enim, ultricies eget justo vel, rutrum ultricies metus. 
+                Fusce erat ipsum, lacinia dictum elit pharetra, porttitor pellentesque ligula. 
+                Maecenas egestas libero eu neque pellentesque, ut fringilla ante varius.</p> 
+                <p class="p2">Nulla facilisi. Ut faucibus eros ut diam vehicula fermentum.</p>
+                <a href="#top">Ga naar boven</a>
+            </section>
+            <hr>
+            <section>
+                <h3 id="nav_landen">Landen</h3>
+                <table id="tabel">
+                    <thead><!--Kolommen-->
+                        <tr id="kolomkoppen">
+                            <th>Land</th>
+                            <th>Afbeelding vlag</th>
+                            <th>Vlagkleuren</th>
+                            <th>Afbeelding land</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <!--cellen Nederland-->
+                        <tr id="rij_nederland">
+                            <td id="cel_nl_naam">Nederland</td>
+                            <td id="cel_nl_vlag"><img src="../assets/img/NL vlag-pexels-jan-van-der-wolf-11680885-33917678.jpg" alt="Nederlandse vlag" title="foto - Jan van der Wolf pexels.com"></td>
+                            <td id="cel_nl_kleuren">Rood-Wit-Blauw</td>
+                            <td id="cel_nl_foto"><img src="../assets/img/NLvogelvlucht-pexels-braujardim-36146693.jpg" alt="Nederland van boven" title="foto - Braulio Jardim pexels.com"></td>
+                        </tr>
+                    <!--cellen Duitsland-->
+                        <tr id="rij_duitsland">
+                            <td id="cel_de_naam">Duitsland</td>
+                            <td id="cel_de_vlag"><img src="../assets/img/Duitse vlag-pexels-valentin-ivantsov-2154772556-38835678.jpg" alt="Duitse vlag" title="Duitse vlag"></td>
+                            <td id="cel_de_kleuren">Zwart-Rood-Goud</td>
+                            <td id="cel_de_foto"><img src="../assets/img/Duitsland van boven-pexels-nathan-berthault-572786212-17028017.jpg" alt="Duitsland van boven" title="foto - Nathan Berthault pexels.com"></td>
+                        </tr>
+                    <!--cellen België-->
+                        <tr id="rij_belgie">
+                            <td id="cel_be_naam">België</td>
+                            <td id="cel_be_vlag"><img src="../assets/img/Belgische vlag-pexels-ivy-nguyen-9041196-6201763.jpg" alt="Belgische vlag" title="Belgische vlag"></td>
+                            <td id="cel_be_kleuren">Zwart-Geel-Rood</td>
+                            <td id="cel_be_foto"><img src="../assets/img/Belgie van boven-pexels-marcelo-benzuca-1871640597-37524595.jpg" alt="België van boven" title="foto - Marcelo Benzuca pexels.com"></td>
+                        </tr>
+                    <!--cellen Luxemburg-->
+                        <tr id="rij_luxemburg">
+                            <td id="cel_lu_naam">Luxemburg</td>
+                            <td id="cel_lu_vlag"><img src="../assets/img/Luxemburgse vlag-pexels-aboodi-13884372.jpg" alt="Luxemburgse vlag" title="Luxemburgse vlag"></td>
+                            <td id="cel_lu_kleuren">Rood-Wit-Lichtblauw</td>
+                            <td id="cel_lu_foto"><img src="../assets/img/Luxemburg van boven-pexels-guillaume-kremer-2161367145-38079093.jpg" alt="Luxemburg van boven" title="foto - Guillaume Kremer pexels.com"></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#top">Ga naar boven</a>
+            </section>
         </main>
 
-        <footer id="footer">
+
+        <footer id="nav_footer">
             <div class="logo-sectie">
-                <img src="../assets/img/EU-pexels-tim-diercks.jpg" alt="Logo Verone de Vries" title="Logo" width="100">
+                <img src="../assets/img/EU-pexels-tim-diercks.jpg" alt="Vlaggen EU-landen" title="foto - Tim Diercks pexels.com" width="100">
             </div>
             
             <div class="footer-sectie">
                 <h3>Contactgegevens</h3>
-                <p>Email: <a href="mailto:veronedevries@gmail.com">veronedevries@gmail.com</a></p>
-                <!-- Telefoonnummer spaties verwijderd in de tel: link -->
-                <p>Telefoon: <a href="tel:0613063429">06 - 13 06 34 29</a></p>
+                <p>Email: <a href="mailto:info@mail.eu">info@mail.eu</a></p>
+                <p>Telefoon: <a href="tel:0612345678">06 - 12 34 56 78</a></p>
             </div>
             
             <div class="footer-sectie">
                 <h3>Adres</h3>
-                <p>Huygensstraat 14</p>
-                <p>7471 XT Goor</p>
+                <p>Europese Unieweg 44</p>
+                <p>7777 XX Brussel</p>
             </div>
             
             <div class="footer-sectie">
                 <h3>Design door</h3>
-                <p>Viverus Webdesign</p>
-                <p>Verone de Vries</p>
+                <p>Masyntrix.com</p>
+                <p>V DeVries</p>
             </div>
         </footer>
     </body>
