@@ -1,0 +1,166 @@
+/* ==========================================
+   1. CSS RESET & BASIS (ALTIJD BOVENAAN!)
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header, main en footer buitenrand gelijk */
+body { 
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; /* Tip: zorgt voor een veilige zijmarge op mobiel */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* ==========================================
+   2. CSS-GRID LAYOUT (elk blok display:grid;)
+   ========================================== */
+
+/*HEADER*/
+header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);/*1 deel = 12 kolommen = volledige breedte*/
+    gap: 20px;
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+header h1 { 
+    grid-column: span 12;/*12 kolommen = volledige breedte*/
+    color: darkolivegreen;
+    font-family: 'Archivo Black', sans-serif;/*Google Font*/
+    font-weight: 400;/*vet*/
+    text-transform: uppercase;/*hoofdletters*/ 
+    font-size: 3rem;/*3x16px=30%*/
+/*achtergrondafbeelding header*/
+    background-image:url(../assets/img/pexels-strannik-sk-36388433.jpg);
+    background-size: cover;/*vult hele h1 zonder vervorming*/
+    background-position: center;/*foto in het midden*/
+    background-repeat: no-repeat;/*geen herhaling*/
+    padding: 60px 20px;/*binnenruimte*/
+    text-align: center;/*titel in het midden*/
+    border-radius: 8px;           /* Optioneel: geeft de foto subtiel afgeronde hoeken */
+}
+
+header p {
+    grid-column: span 12;/*12 kolommen = volledige breedte*/
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1.2rem;/*1.2x16px=120%*/ 
+    color: olive;      
+    text-transform: none;/*geen style*/
+    margin-top: -10px;/*negatieve marge=minder afstand*/ 
+}
+header nav {
+    grid-column: span 12;/*navigatie volledige breedte*/
+}
+header nav ul {
+    display: flex;/*activeert FlexboxModel, standaardinstelling is menuknoppen naast elkaar*/
+    list-style: none;/*geen opsommingstekens */
+    gap: 20px;/*ruimte tussen de menuknoppen*/
+}
+/*pseudoclass LVHA: Link en Hover*/
+header nav a { 
+    text-decoration: none;
+    color: olive;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    transition: color 0.3s;/*kleurverandering van 0.3 seconden*/
+}
+header nav a:hover {
+    color: darkolivegreen; /* Kleurt mee met je H1 als je erover hoovert! */
+    text-decoration: underline;
+}
+
+/*MAIN*/
+main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);/*volledige breedte*/
+    gap: 20px;/*ruimte tussen kolommen en rijen*/
+}
+/*main linkerkant*/
+.main-inhoud { 
+    grid-column: 1 / span 10;/*kolom 1, vult 10 kolommen*/
+}
+/*sidebar schuift naar rechterkant*/
+.main-nav { 
+    grid-column: 11 / span 2;/*vanaf kolom 11, vult 2 kolommen*/
+}
+.main-nav ul {
+    list-style: none; /*geen opsommingstekens*/
+    display: flex;/*activeert FlexboxModel, standaardinstelling naast elkaar, dus:*/
+    flex-direction: column;/*FlexboxModel menuknoppen onder elkaar*/
+    gap: 15px; /*ruimte tussen menuknoppen*/
+}
+/*pseudoclass LVHA: Link en Hover*/
+.main-nav a { 
+    text-decoration: none;
+    color: olive;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:normal;
+    transition: color 0.3s;/*kleurverandering van 0.3 seconden*/
+}
+
+.main-nav a:hover {
+    color: darkolivegreen;/*mouse-over*/
+    text-decoration: underline;
+}
+
+
+/*uitlijning en styling footer CSS Grid-ouder*/ 
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;/*3 delen x 4 kolommen*/ 
+    gap: 40px;/*ruimte tussen 3 delen*/
+    padding: 40px 0;
+    border-top: 1px solid #eee;
+}
+/*styling 3 kolommen*/
+.footer div {
+    /*algemene styling*/
+}
+.footer h3 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+    color: #333;
+}
+.footer p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Het bekende trucje: lijn de tekst van de allerlaatste div rechts uit op desktop */
+.footer div:last-child {
+    text-align: right;
+}
+
+
+
+/* ==========================================
+   RESPONSIVE (alle aanpassingen één mediaquery)
+   ========================================== */
+@media (max-width: 768px) {
+    
+    /*responsive main, nav en inhoud*/
+    main {
+        grid-template-columns: 1fr; /*mobiel: main 1 breed deel in plaats van 12 kolommen*/
+    }
+    .main-nav, .main-inhoud {
+        grid-column: auto; /*main-nav en main-inhoud samen volledige breedte*/
+    }
+
+    /*responsive footer*/
+    .footer {
+        grid-template-columns: 1fr; /*mobiel: footer 1 breed deel in plaats van 12 kolommen*/
+        gap: 30px;
+    }
+    .footer div, .footer div:last-child {
+        text-align: center; /*mobiel: tekstuitlijning midden*/
+    }
+}

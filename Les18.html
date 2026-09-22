@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <!--Meta-tags-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="beschrijving">
+        <meta name="author" content="Verone de Vries">
+        <meta name="robots" content="index, follow"><!--noindex/nofollow=onzichtbare inhoud en links voor robots SEO-->
+        <link class="canonical" href="website url"><!--url pagina-->
+        <title>Titel</title>
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+
+        <!--Open Graph / Social Media-->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="website url">
+        <meta property="og:title" content="titel">
+        <meta property="og:description" content="beschrijving">
+        <meta property="og:image" content="website url">
+
+        <!--SCSS / JavaScript koppelen-->
+        <link rel="stylesheet" type="text/css" href="portfolio.css">
+        <script src="js/main.js" defer></script>
+    </head>
+
+    <body>
+        <header class="header"><!--CSS Grid (repeat 12 1fr) 1 brede kolom-->
+            <nav class="header-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="Over ons">Over ons</a></li>
+                    <li><a href="Projecten">Projecten</a></li>
+                    <li><a href="Contact">Contact</a></li>
+                </ul>
+            </nav>
+            
+            <h1>Goor</h1>
+            <p>Twents haagje in de Hof van Twente</p>
+        </header>
+    <body>
+        <main><!--grid-ouder-->
+            <nav class="main-nav"><!--sidebar child 2, CSS Grid 11 span 2 = kolom 11 en 12 binnen main parent-->
+                <ul>
+                    <li><a href="#section1">Section 1</a></li>
+                    <li><a href="#section2">Section 2</a></li>
+                </ul>
+            </nav>
+            
+            <div class="main-inhoud"><!--inhoud child 1, CSS Grid 1 span 10 = kolom 1 tot en met 10 binnen main parent-->
+                <section id="section1">
+                    <h2>Titel</h2>
+                    <p>tekst</p>
+                    <a href="#top">Ga naar boven</a>
+                </section>
+
+                <section id="section2">
+                    <h2>Titel</h2>
+                    <p>tekst</p>
+                    <a href="#top">Ga naar boven</a>
+                </section>
+            </div>
+        </main>
+    
+        <footer class="footer"><!--CSS Grid 1fr 1 fr 1 fr = 3 delen van 4 kolommen-->
+            <div>
+                <h3>Bedrijfsgegevens</h3>
+                <p>Masyntrix Inc.</p>
+            </div>
+            <div>
+                <h3>Contactgegevens</h3>
+                <p>Lindelaan 50<br>7550 PB Zeist</p>
+            </div>
+            <div>
+                <h3>Design</h3>
+                <p>&copy; 2026 Alle rechten voorbehouden</p>
+            </div>
+        </footer>
+
+    </body>
+</html>
