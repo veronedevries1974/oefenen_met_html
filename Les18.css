@@ -1,0 +1,170 @@
+/*CSS reset bovenaan*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Header, main en footer buitenrand gelijk via de body*/
+body {/*extern lettertype en pagina in het midden van het scherm*/
+    font-family: 'Product Sans', 'Google Sans', sans-serif;
+    line-height: 1.6;
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*HEADER*/
+header {
+    display: grid;/*activeert CSS Grid*/
+    grid-template-columns: repeat(12, 1fr);/*12columns=1fractie=volledige breedte*/
+    gap: 20px;/*ruimte tussen kolommen*/
+    border-top: 5px solid darkolivegreen;
+    border-bottom: 5px solid darkolivegreen;
+    border-radius: 8px;/*afgeronde hoeken*/
+    margin-bottom: -2rem;/*iets kleinere ruimte*/
+}
+header h1 {
+    grid-column: span 12;/*12columns=volledige breedte*/
+    color:whitesmoke;
+    font-size: 6rem;/*6x16px of 600%*/
+    font-weight: 700;/*vet*/
+    text-transform: uppercase;/*hoofdletters*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);/*tekst schaduw*/
+
+    /*achtergrondafbeelding h1*/
+    background-image: url(Les18/pexels-strannik-sk-36388433.jpg);
+    width: 100%;/*afbeelding schaalt mee*/
+    height: auto;
+    display: block;/*Block Level element*/
+    background-size: cover;/*vult hele h1 zonder vervorming*/
+    background-position: center;/*foto midden*/
+    background-repeat: no-repeat;/*afbeelding niet herhalen*/
+    padding: 3.75rem 1.25rem;/*binnenruimte*/
+    text-align: center;/*centreert de titel*/
+    border-radius: 8px;/*foto afgeronde hoeken*/
+    box-shadow: 0px 0px 15px 2px darkolivegreen;
+}
+header p {
+    grid-column: span 12;/*12columns=volledige breedte*/
+    font-size: 1.2rem;/*1.2x16px of 120%*/
+    font-weight: 200;/*vet*/
+    font-style: italic;/*schuin*/
+    font-weight: bold;/*vet*/
+    color: darkolivegreen;/*tekstkleur*/
+    text-transform:uppercase;/*hoofdletters*/
+    text-align: center;/*tekst gecentreerd*/
+    background-color:antiquewhite;/*achtergrondkleur*/
+    border-radius: 8px 8px;/*afgeronde hoeken*/
+    margin-top: 0rem;/*negatieve marge = minder afstand*/
+}
+header nav {
+    grid-column: span 12;/*12 columns = volledige breedte*/
+}
+header nav ul {
+    display: flex;/*activeert FlexboxModel*/
+    flex-direction: row;/*knoppen naast elkaar*/
+    list-style-type: none;/*geen opsommingstekents*/
+    padding: 0rem;/*verwijdert standaard ruimte ul*/
+    margin: 0rem;/*verwijdert standaard ruimte ul*/
+    border-radius: 8px;/*afgeronde hoeken*/
+    gap: 20px;/*ruimte tussen knoppen*/
+}
+header nav a {
+    text-decoration: none;/*geen onderstreep*/
+    color:darkolivegreen;
+    font-size: 1.2rem;/*lettergrootte 1.2x16px*/
+    font-weight: 100;
+    transition: 0.5s;/*kleurverandering van 0.5 seconden*/
+}
+header nav a:hover {
+    color:olive;/*mouse-over 0.5 seconden*/
+    text-decoration: underline;/*mouse-over onderstreept*/
+    font-weight: bold;
+}
+/*MAIN*/
+main {
+    display: grid;
+    grid-template-columns: 1fr; /* Mobiel: Alles in één brede kolom onder elkaar */
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*WETENSWAARDIGHEDEN*/
+.deel1 {
+    color: darkolivegreen;
+    background-color:antiquewhite;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.deel1 ul {
+    padding-left: 20px;
+}
+.deel1 ul ul {
+    margin-top: 5px;
+    margin-bottom: 15px;
+    list-style-type: square; 
+}
+
+/*BEZIENSWAARDIGHEDEN*/
+.deel2 {
+    display: flex;/*activeert FlexboxModel*/
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*blokken binnen de bezienswaardigheden */
+.deel2 > div {
+    color: antiquewhite;
+    background-color:darkolivegreen;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Afbeeldingen responsive maken */
+figure {
+    margin: 15px 0 0 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-size: 0.9em;
+}
+
+
+/* ==========================================
+   DESKTOP (Schermen vanaf 768px breed)
+   ========================================== */
+
+@media (min-width: 768px) {
+    main {
+        /* Schakelt op desktop over naar 2 kolommen naast elkaar */
+        grid-template-columns: 1fr 2fr; 
+    }
+}
+footer {
+    display: grid;/*activeert CSS Grid*/
+    grid-template-columns: repeat(3, 1fr);/*3x1fractie=3 delen*/
+    gap: 20px;
+    border-top: 5px solid darkolivegreen;
+    border-bottom: 5px solid darkolivegreen;
+    border-radius: 8px;/*afgeronde hoeken*/
+    text-align: center;
+    font-style: italic;
+    color: darkolivegreen;
+    background-color: antiquewhite;
+}
